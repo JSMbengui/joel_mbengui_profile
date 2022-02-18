@@ -1,115 +1,82 @@
 import { FC } from "react"
 
 const Home: FC = () => {
-  const Header = () => {
-    return (
-      <div>
-        <div>
-          <img />
-          <h2>Joel Mbengui</h2>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Experience</a></li>
-          </ul>
-        </nav>
-      </div>
-    )
-  }
-  const IntroAbout = () => {
-    return (
-      <div>
-        <div>
-          <h1>Hi, I´m Joel Sebastião Mbengui 👋🏼</h1>
-          <p>
-            I'm a Software developer from Luanda, Angola. I <a href="#">code</a>, <a href="#">write</a> and build stuff on internet.
-          </p>
-          <p>
-            I'm a Software developer interested in design, under engineering and open source. I previues work at MochiLab.
-          </p>
-          <p>
-            I'm focused on building products with TypeScrypt, specifically React and React-Native.
-          </p>
-          <p>
-            When I'm not coding, I'm likely at the gym or surfing the city with my longboard.
-          </p>
-          <p>
-            You can find me on <a href="#">GitHub</a>, <a href="#">Twitter</a> and <a href="#">LinkedIn</a>.
-          </p>
-        </div>
-      </div>
-    )
-  }
-  const IntroWrite = () => {
-    return (
-      <div>
-        <header>
-          <h3>Writings</h3>
-          <p>The latests posts of my blog.</p>
 
-          <div>
-            <p>Em breve</p>
-          </div>
-        </header>
-      </div>
-    )
-  }
-  const IntroExperience = () => {
-    return (
-      <div>
-        <header>
-          <h3>Experience</h3>
-          <p>Featured Experience projects.</p>
-
-          <div>
-            <p>Em breve</p>
-          </div>
-        </header>
-      </div>
-    )
-  }
-  const Contact = () => {
-    return (
-      <div>
-        <header>
-          <h3>Contact</h3>
-          <p>Let's make something together.</p>
-
-          <div>
-            <p>Feel free to send me an email if you're looking for a front end engineer, have a question or just want to say hi! 🙋‍♂️</p>
-            <a href="#">Say hello</a>
-          </div>
-        </header>
-      </div>
-    )
-  }
-  const Footer = () => {
-    return (
-      <div>
-        <div>
-          <a href="#">joelmbengui</a>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Linkedin</a></li>
-          </ul>
-        </nav>
-      </div>
-    )
-  }
   return (
-    <div>
-      <Header />
-      <IntroAbout />
-      <IntroWrite />
-      <IntroExperience />
-      <Contact />
-      <Footer />
-    </div>
+    <>
+      <main className="main_container">
+        <section className="card">
+          <header className="card_header">
+            {/* <!-- <img src="./images/imagem.jpg" /> --> */}
+          </header>
+          <div className="card_body">
+            <div className="card_body_info">
+              <h2 className="card_body_title">Ola! 👋🏼 Eu sou o Joel Mbengui</h2>
+              <p className="card_body_description">Eu sou engenheiro de software, vivendo em Luanda, Angola. </p>
+              <p className="card_body_description">Eu gosto de design,
+                e criar aplicações para web e integrações entre APIs</p>
+            </div>
+
+          </div>
+          <footer className="card_footer">
+            <a href="mailto:joelsmbengui@gmail.com" className="card_footer_proceed">Diz ola!</a>
+          </footer>
+        </section>
+      </main>
+      <div className="info_container">
+        <section className="info_container_item">
+          <header className="info_container_header">
+            <div>
+              <h2 className="info_container_item_title">Artigos</h2>
+              <h3 className="info_container_item_sub_title">Últimos artigos no meu blog</h3>
+            </div>
+            {/* <!-- <a href="#" className="info_container_item_link">Ver todos</a> --> */}
+          </header>
+          <div className="not_found">
+            <h3>Brevemente</h3>
+          </div>
+        </section>
+
+        <section className="info_container_item">
+          <header className="info_container_header">
+            <div>
+              <h2 className="info_container_item_title">Laboratorio</h2>
+              <h3 className="info_container_item_sub_title">Projectos criados em tempo livre</h3>
+            </div>
+            {/* <!-- <a href="#" className="info_container_item_link">Ver todos</a> --> */}
+          </header>
+          <div className="not_found">
+            <h3>Brevemente</h3>
+          </div>
+        </section>
+
+        <section className="info_container_item">
+          <header className="info_container_header">
+            <div>
+              <h2 className="info_container_item_title">Contacto</h2>
+              <h3 className="info_container_item_sub_title">Vamos criar algo juntos.</h3>
+            </div>
+          </header>
+          <div className="contact_section">
+            <p>Sinta-se avontade em enviar um email se estas a procura de um engenheiro de software, se tens uma pergunta ou
+              apenas para dizer ola! 🙋‍♂️</p>
+
+            <a href="mailto:joelsmbengui@gmail.com" className="card_footer_proceed">Envia um e-mail</a>
+          </div>
+        </section>
+
+        <footer className="footer">
+          <strong>
+            <a href="/">joelsmbengui</a>
+          </strong>
+          <nav>
+            <a href="https://github.com/jsmbengui">GitHub</a>
+            <a href="https://www.linkedin.com/in/me/joel-sebastião-mbengui">Linkedin</a>
+          </nav>
+        </footer>
+
+      </div>
+    </>
   )
 }
 
