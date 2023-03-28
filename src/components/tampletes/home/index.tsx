@@ -11,10 +11,12 @@ const Home: FC = () => {
           </header>
           <div className="card_body">
             <div className="card_body_info">
-              <h2 className="card_body_title">Ola! 👋🏼 Eu sou o Joel Mbengui</h2>
-              <p className="card_body_description">Eu sou engenheiro de software, vivendo em Luanda, Angola. </p>
-              <p className="card_body_description">Eu gosto de design,
-                e criar aplicações para web e integrações entre APIs</p>
+              <h2 className="card_body_title">Joel Sebastião Mbengui</h2>
+              <p className="card_body_description">Engenheiro de software, focado no desenvolvimento de software para web e a integração de APIs.</p>
+              <p className="card_body_description">
+                Eu gosto de design,
+                e criar aplicações para web e integrações entre APIs
+              </p>
             </div>
 
           </div>

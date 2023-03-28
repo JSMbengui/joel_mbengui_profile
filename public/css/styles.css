@@ -7,6 +7,32 @@
   font-family: Lato;
   src: url(../fonts/Lato-Regular.ttf);
 }
+*, :before, :after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+.from-slate-900 {
+  --tw-gradient-from: #0f172a;
+  --tw-gradient-to: rgb(15 23 42 / 0);
+  --tw-gradient-stops: #0f172a, rgb(15 23 42 / 0);
+}
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom,var(--tw-gradient-stops));
+}
+.to-black {
+  --tw-gradient-to: #000;
+}
+.border-b-\[\#1e293c\] {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(30 41 60 / var(--tw-border-opacity));
+}
+.border-b {
+  border-bottom-width: 1px;
+}
+
+
 body {
   /* min-width: 100%;
   min-height: 100vh; */
