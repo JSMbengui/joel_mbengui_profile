@@ -1,4 +1,5 @@
 import { FC } from "react"
+import Link from 'next/link'
 
 const Home: FC = () => {
 
@@ -69,7 +70,7 @@ const Home: FC = () => {
 
         <footer className="footer">
           <strong>
-            <a href="/">joelsmbengui</a>
+            <Link href="/">joelsmbengui</Link>
           </strong>
           <nav>
             <a href="https://github.com/jsmbengui">GitHub</a>
