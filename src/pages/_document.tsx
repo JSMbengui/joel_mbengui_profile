@@ -8,7 +8,7 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="stylesheet" href="/css/variable.css" />
           <link rel="stylesheet" href="/css/styles.css" />
-          <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
+          <link rel="icon" href="favicon.ico" type="image/ico" />
         </Head>
         <body >
           <Main />
