@@ -9,7 +9,7 @@ const Home: FC = () => {
         <div className="container">
           <div className="flex justify-between items-center text-neutral-100">
             <Link href="/">
-              js
+              <a className="text-md sm:text-xl text-white">js</a>
             </Link>
             <div className="flex text-md gap-5 sm:text-lg">
               <Link href="/">Home</Link>
@@ -40,7 +40,7 @@ const Home: FC = () => {
           <br />
         </div>
 
-        <div className="divide-neutral-500 divide-y mt-5">
+        <div className="divide-neutral-500 divide-y mt-5" id="projects">
           <p className="text-white font-bold mb-2 sm:mb-4 sm:text-7xl text-3xl">Projects and Companies I work on:</p>
 
           <a
