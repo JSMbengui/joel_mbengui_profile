@@ -1,4 +1,5 @@
 import { FC } from "react"
+import Link from 'next/link'
 
 const Home: FC = () => {
 
@@ -7,14 +8,14 @@ const Home: FC = () => {
       <div className="py-1 sm:py-5">
         <div className="container">
           <div className="flex justify-between items-center text-neutral-100">
-            <a href="/">
+            <Link href="/">
               js
-            </a>
+            </Link>
             <div className="flex text-md gap-5 sm:text-lg">
-              <a href="/">Home</a>
-              <a href="/#projects">Projects</a>
-              <a href="/labs">Lab</a>
-              <a href="/blog">Blog</a>
+              <Link href="/">Home</Link>
+              <Link href="/#projects">Projects</Link>
+              <Link href="/labs">Lab</Link>
+              <Link href="/blog">Blog</Link>
             </div>
           </div>
         </div>
@@ -70,86 +71,15 @@ const Home: FC = () => {
       <div className="container">
         <div className="mt-5 pt-5 sm:mt-16 sm:text-xl text-base text-center text-neutral-400">
           <div className="flex justify-center text-md gap-5 sm:text-lg">
-            <a href="mailto:joelsmbengui@gmail.com" >Mail</a>
-            <a href="https://github.com/jsmbengui">GitHub</a>
-            <a href="https://www.linkedin.com/in/me/joel-sebastião-mbengui">Linkedin</a>
+            <Link href="mailto:joelsmbengui@gmail.com" >Mail</Link>
+            <Link href="https://github.com/jsmbengui">GitHub</Link>
+            <Link href="https://www.linkedin.com/in/me/joel-sebastião-mbengui">Linkedin</Link>
           </div>
           <br />
           © All rights reserved — Joel Mbengui
         </div>
       </div>
-      {/* <main className="main_container">
-        <section className="card">
-          <header className="card_header">
-            
-          </header>
-          <div className="card_body">
-            <div className="card_body_info">
-              <h2 className="card_body_title">Joel Sebastião Mbengui</h2>
-              <p className="card_body_description">Engenheiro de software, focado no desenvolvimento de software para web e a integração de APIs.</p>
-              <p className="card_body_description">
-                Eu gosto de design,
-                e criar aplicações para web e integrações entre APIs
-              </p>
-            </div>
 
-          </div>
-          <footer className="card_footer">
-            <a href="mailto:joelsmbengui@gmail.com" className="card_footer_proceed">Diz ola!</a>
-          </footer>
-        </section>
-      </main> */}
-      {/* <div className="info_container">
-        <section className="info_container_item">
-          <header className="info_container_header">
-            <div>
-              <h2 className="info_container_item_title">Artigos</h2>
-              <h3 className="info_container_item_sub_title">Últimos artigos no meu blog</h3>
-            </div>
-          </header>
-          <div className="not_found">
-            <h3>Brevemente</h3>
-          </div>
-        </section>
-
-        <section className="info_container_item">
-          <header className="info_container_header">
-            <div>
-              <h2 className="info_container_item_title">Laboratorio</h2>
-              <h3 className="info_container_item_sub_title">Projectos criados em tempo livre</h3>
-            </div>
-          </header>
-          <div className="not_found">
-            <h3>Brevemente</h3>
-          </div>
-        </section>
-
-        <section className="info_container_item">
-          <header className="info_container_header">
-            <div>
-              <h2 className="info_container_item_title">Contacto</h2>
-              <h3 className="info_container_item_sub_title">Vamos criar algo juntos.</h3>
-            </div>
-          </header>
-          <div className="contact_section">
-            <p>Sinta-se avontade em enviar um email se estas a procura de um engenheiro de software, se tens uma pergunta ou
-              apenas para dizer ola! 🙋‍♂️</p>
-
-            <a href="mailto:joelsmbengui@gmail.com" className="card_footer_proceed">Envia um e-mail</a>
-          </div>
-        </section>
-
-        <footer className="footer">
-          <strong>
-            <Link href="/">joelsmbengui</Link>
-          </strong>
-          <nav>
-            <a href="https://github.com/jsmbengui">GitHub</a>
-            <a href="https://www.linkedin.com/in/me/joel-sebastião-mbengui">Linkedin</a>
-          </nav>
-        </footer>
-
-      </div> */}
     </div>
   )
 }
