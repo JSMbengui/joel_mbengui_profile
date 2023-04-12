@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image'
 
 export default function RootLayout({
   children,
@@ -10,24 +11,11 @@ export default function RootLayout({
       <div className="container">
         <div className="flex justify-between items-center text-neutral-100">
           <Link href="/" className="text-md sm:text-xl text-white">
-            <div
-              style={{
-                borderRadius: '50%',
-                display: 'block',
-                height: '3.2rem',
-                objectFit: 'cover',
-                width: '3.2rem'
-              }}
-            >
-              <img src="/images/profile.jpg"
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                  objectPosition: 'center center',
-                  transitionDelay: '500ms',
-                  borderRadius: '50%'
-                }}
+            <div className="img-container-style">
+              <Image
+                alt="Joel Sebastião Mbengui"
+                src="/images/profile.jpg"
+                className="img-style"
               />
             </div>
           </Link>
