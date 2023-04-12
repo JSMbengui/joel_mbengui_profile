@@ -45,7 +45,7 @@ export default function RootLayout({
   );
 
   return (
-    <html>
+    <html lang="en">
       <head>
         <title>Joel Sebastião Mbengui - Engenheiro de Software</title>
         <meta content="width=device-width, initial-scale=1" name="viewport" />
