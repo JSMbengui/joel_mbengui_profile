@@ -12,7 +12,7 @@ export default function Head() {
       <meta property="og:description" content="Joel Sebastião Mbengui, engenheiro de software focado em criar aplicações para web e integração entre APIs." />
       <meta property="og:type" content="website" />
       <meta property="og:image" content="/images/imagem.jpg" />
-      <meta property="og:url" content="http://www.joelsmbengui.com" />
+      <meta property="og:url" content="https://joelmbengui.vercel.app/" />
 
       {/* <!-- Twitter SEO --> */}
       <meta property="twitter:card" content="summary" />
@@ -21,7 +21,7 @@ export default function Head() {
       <meta property="twitter:creator" content="@joelmbengui" />
       <meta property="twitter:site" content="@joelmbengui" />
       <meta property="twitter:image" content="/images/imagem.jpg" />
-      <meta property="twitter:url" content="http://www.joelsmbengui.com" />
+      <meta property="twitter:url" content="https://joelmbengui.vercel.app/" />
     </>
   );
 }
