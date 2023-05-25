@@ -2,17 +2,26 @@
 
 import Footer from "@/components/organisms/footer";
 import Header from "@/components/organisms/header";
+import SEO from "@/components/organisms/seo";
+import useTranslation from "next-translate/useTranslation";
 
 const Blog = () => {
   // const postMetadata = getPostMetadata();
+  const { t: trans } = useTranslation('head')
 
   return (
-    <div className="bg-neutral-900 block min-h-screen pb-10 pt-1 sm:pb-32">
-      <Header />
-      <div className="container">
-        <div className="divide-neutral-500 divide-y mt-5">
-          <p className="text-white font-bold mb-2 sm:mb-4 sm:text-7xl text-3xl">Lastest articles</p>
-          {/* {postMetadata.map((post, i) => (
+    <>
+      <SEO
+        description={trans('title')}
+        title={trans('description')}
+      />
+
+      <div className="bg-neutral-900 block min-h-screen pb-10 pt-1 sm:pb-32">
+        <Header />
+        <div className="container">
+          <div className="divide-neutral-500 divide-y mt-5">
+            <p className="text-white font-bold mb-2 sm:mb-4 sm:text-7xl text-3xl">Lastest articles</p>
+            {/* {postMetadata.map((post, i) => (
             <a
               key={i}
               href={post.slug}
@@ -20,11 +29,12 @@ const Blog = () => {
               {post.title}
             </a>
           ))} */}
+          </div>
         </div>
-      </div>
 
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 };
 
