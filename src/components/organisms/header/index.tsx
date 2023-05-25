@@ -1,11 +1,12 @@
-import { useTranslations } from "next-intl";
+import useTranslation from 'next-translate/useTranslation'
+
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from 'react'
 
 const Header: FC = () => {
-  const t = useTranslations('PageHeader')
-  
+  const { t } = useTranslation('common')
+
   return (
     <header className="py-1 sm:py-5">
       <div className="container">
@@ -16,16 +17,16 @@ const Header: FC = () => {
                 width={300}
                 height={300}
                 alt="Joel Sebastião Mbengui"
-                src="/images/profile.jpg"
+                src="/assets/images/profile.jpg"
                 className="img-style"
               />
             </div>
           </Link>
           <div className="flex text-md gap-5 sm:text-lg">
-            <Link href="/">{t('menu.home')}</Link>
-            <Link href="/#projects">{t('menu.projects')}</Link>
-            <Link href="/#">{t('menu.lab')}</Link>
-            <Link href="/blog">{t('menu.blog')}</Link>
+            <Link href="/">{t('home')}</Link>
+            <Link href="/#projects">{t('projects')}</Link>
+            <Link href="/#">{t('lab')}</Link>
+            <Link href="/blog">{t('blog')}</Link>
           </div>
         </div>
       </div>

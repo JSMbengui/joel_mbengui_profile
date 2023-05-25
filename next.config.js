@@ -1,16 +1,3 @@
-/** @type {import('next').NextConfig} */
-const withNextIntl = require('next-intl/plugin')(
-  // This is the default (also the `src` folder is supported out of the box)
-  './src/i18n.ts'
-);
+const nextTranslate = require('next-translate-plugin')
 
-module.exports = withNextIntl({
-  reactStrictMode: true,
-  swcMinify: true,
-  experimental: {
-    appDir: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-})
+module.exports = nextTranslate()

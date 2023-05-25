@@ -1,12 +1,16 @@
 import { FC } from "react"
 import { HomeProps } from "./type"
-import { useTranslations } from "next-intl"
+import useTranslation from 'next-translate/useTranslation'
+import Header from "@/components/organisms/header"
+import Footer from "@/components/organisms/footer"
 
 const Home: FC<HomeProps> = () => {
-  const t = useTranslations('Home')
+  const { t } = useTranslation('home')
 
   return (
-    <>
+    <div className="bg-neutral-900 block min-h-screen pb-10 pt-1 sm:pb-32">
+      <Header />
+
       <div className="container">
         <div className="mt-5 mb-5 sm:mb-12 sm:mt-4">
           <h1 className="text-white font-bold mb-2 sm:mb-4 sm:text-9xl text-5xl">
@@ -49,7 +53,9 @@ const Home: FC<HomeProps> = () => {
         </div>
 
       </div>
-    </>
+
+      <Footer />
+    </div>
   )
 }
 

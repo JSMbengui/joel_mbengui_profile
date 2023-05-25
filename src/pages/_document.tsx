@@ -1,0 +1,14 @@
+import { Html, Head, Main, NextScript } from 'next/document'
+
+export default function Document(props: any) { 
+
+  return (
+    <Html lang={"pt"}>
+      <Head />
+      <body>
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  )
+}

@@ -1,0 +1,23 @@
+{
+  "locales": [
+    "en",
+    "pt"
+  ],
+  "defaultLocale": "pt",
+  "pages": {
+    "*": [
+      "common"
+    ],
+    "/": [
+      "home",
+      "header",
+      "presentation",
+      "videoHowItWorks",
+      "howToFindTalent",
+      "download"
+    ],
+    "/about": [
+      "about"
+    ]
+  }
+}

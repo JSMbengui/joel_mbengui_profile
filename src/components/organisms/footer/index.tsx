@@ -1,9 +1,10 @@
-import { useTranslations } from "next-intl";
+import useTranslation from 'next-translate/useTranslation'
+
 import Link from "next/link";
 import { FC } from 'react'
 
 const Footer: FC = () => {
-  const t = useTranslations('PageFooter')
+  const { t } = useTranslation('common')
 
   return (
     <footer className="container">
