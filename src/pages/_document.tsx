@@ -1,9 +1,8 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 
-export default function Document(props: any) { 
-
+export default function Document(props: any) {
   return (
-    <Html lang={"pt"}>
+    <Html lang={props.__NEXT_DATA__.props.__lang}>
       <Head />
       <body>
         <Main />
