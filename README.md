@@ -1,6 +1,6 @@
 # Joel Mbengui - Personal website
 
-[Access it]([http://www.joelmbengui.vercel.app/](https://joelmbengui.vercel.app/))
+[Access it](http://www.joelmbengui.vercel.app/)
 
 This project uses Nextjs (React), Styled Components.
 
