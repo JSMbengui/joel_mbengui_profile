@@ -6,7 +6,7 @@ This project uses Nextjs (React), Styled Components.
 
 Maybe you want to read about them:
 
-- [Nextjs]([https://www.gatsbyjs.org/](https://nextjs.org/))
+- [Nextjs](https://www.nextjs.org/)
 - [Styled Components](https://www.styled-components.com/)
 
 ### Code Standarts
